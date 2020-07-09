@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: register-center
+server:
+  port: 8801
+eureka:
+  instance:
+    hostname: turui-pc
+  client:
+    fetch-registry: false
+    register-with-eureka: false

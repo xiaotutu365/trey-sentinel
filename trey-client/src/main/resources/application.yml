@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: trey-client
+  cloud:
+    sentinel:
+      transport:
+        port: 9902
+        dashboard: localhost:9901
+server:
+  port: 8802
+eureka:
+  instance:
+    hostname: turui-client
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8801/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
