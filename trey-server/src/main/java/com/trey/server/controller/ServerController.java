@@ -9,6 +9,7 @@ public class ServerController {
 
     @GetMapping("/echo/{str}")
     public String echo(@PathVariable String str) {
+        System.out.println("Hello Echo, " + str);
         return "Hello Echo, " + str;
     }
 }

@@ -5,7 +5,7 @@ server:
   port: 8801
 eureka:
   instance:
-    hostname: turui-pc
+    hostname: trey-pc
   client:
     fetch-registry: false
     register-with-eureka: false

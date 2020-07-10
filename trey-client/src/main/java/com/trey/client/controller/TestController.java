@@ -25,4 +25,9 @@ public class TestController {
     public String remoteEcho(@PathVariable String str) {
         return serverFeignService.echo(str);
     }
+
+    @GetMapping(value = "/protect/{methodName}")
+    public String protectMethod(@PathVariable String methodName) {
+        return "protect method";
+    }
 }
