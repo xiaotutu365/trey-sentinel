@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: trey-gateway
+  cloud:
+    nacos:
+      discovery:
+        ## 服务发现地址
+        server-addr: 127.0.0.1:8848
+      config:
+        ## 指定命名空间
+        namespace: 9975175f-f08a-4b73-a66a-eb0c67a475ef
+        extension-configs[0]:
+          data-id: app-name.yml
+          group: dev
+          refresh: true
+        extension-configs[1]:
+          data-id: app-name2.yml
+          group: dev
+          refresh: true

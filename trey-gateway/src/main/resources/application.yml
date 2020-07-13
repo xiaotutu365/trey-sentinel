@@ -1,0 +1,7 @@
+
+server:
+  port: 8804
+gateway:
+  user:
+    name: turui
+    age: 33
