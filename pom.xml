@@ -12,6 +12,7 @@
     <modules>
         <module>trey-common</module>
         <module>trey-gateway</module>
+        <module>trey-client</module>
     </modules>
 
 </project>

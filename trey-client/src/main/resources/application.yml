@@ -6,16 +6,11 @@ spring:
       transport:
         port: 9902
         dashboard: localhost:9901
+    nacos:
+      discovery:
+        server-addr: localhost:8848
 server:
   port: 8802
-eureka:
-  instance:
-    hostname: trey-client
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8801/eureka/
 management:
   endpoints:
     web:

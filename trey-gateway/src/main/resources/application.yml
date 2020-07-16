@@ -1,12 +1,14 @@
 spring:
   cloud:
     gateway:
+#      discovery:
+#        locator:
+#          enabled: true
       routes:
-        - id: baidu_route
-          uri: https://www.baidu.com
+        - id: trey-client
+          uri: lb://trey-client
           predicates:
-            - Query=url,baidu
-        - id: qq_route
-          uri: https://www.qq.com
-          predicates:
-            - Query=url,qq
+            - Path=/hello/**
+#            - After=2020-07-15T14:04:54.563+08:00[Asia/Shanghai]
+#            - Cookie=username,turui
+#            - Header=X-Request-Id, \d+
